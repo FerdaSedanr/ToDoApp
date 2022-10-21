@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://kit.fontawesome.com/564d92952b.js" crossorigin="anonymous"></script>
+    <body>
+	
+      <header>
+        <h1><i class="fa-regular fa-pen-to-square"></i>Task List 2022</h1>
+        <form id="new-task-form">
+          <input 
+            type="text" 
+            name="new-task-input" 
+            id="new-task-input" 
+            placeholder="What do you have planned?" />
+            <i class="fa-solid fa-plus"></i>
+          <input  
+            type="submit" 
+            id="new-task-submit" 
+            value="Add task" />
+        </form>
+      </header>
+      <main>
+        <section class="task-list">
+          <h2><i class="fa-solid fa-check"></i>Tasks</h2>
+    
+          <div id="tasks">
+    
+          </div>
+        </section>
+      </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

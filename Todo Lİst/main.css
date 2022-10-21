@@ -1,0 +1,203 @@
+:root {
+  --dark: #bec7d4;
+  --darker: #1f3156;
+  --darkest: #1f3156;
+  --gray: #6b7280;
+  --light: #fffade;
+  --pink: #ff0060;
+  --purple: #a379f4;
+  --orange: #ff3500;
+  --yellow: #fae312;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #1f3156;
+  background-color: var(--dark);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--grey);
+  margin-bottom: 2rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.5rem;
+}
+
+#new-task-input::placeholder {
+  color: var(--grey);
+}
+
+#new-task-submit {
+  color: var(--pink);
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right top,
+    #ff0060,
+    #ff0053,
+    #ff0b45,
+    #ff1836,
+    #ff2525,
+    #ff441b,
+    #ff5a0f,
+    #ff6d00,
+    #ff8d00,
+    #ffaa00,
+    #ffc700,
+    #fae312
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.fa-plus {
+  color: var(--purple);
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
+.fa-pen-to-square {
+  color: var(--purple);
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
+.fa-check {
+  color: var(--purple);
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.task .content {
+  flex: 1 1 0%;
+}
+
+.task .content .text {
+  color: var(--light);
+  font-size: 1.25rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  color: var(--purple);
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  background-image: linear-gradient(
+    to right top,
+    #ff0060,
+    #ff0053,
+    #ff0b45,
+    #ff1836,
+    #ff2525,
+    #ff441b,
+    #ff5a0f,
+    #ff6d00,
+    #ff8d00,
+    #ffaa00,
+    #ffc700,
+    #fae312
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+  color: rgb(245, 11, 58);
+}
